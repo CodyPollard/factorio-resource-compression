@@ -19,6 +19,16 @@ data:extend({
 	order = "[compressed-copper]",
 	stack_size = 100,
   },
+  
+  {
+	type= "item",
+	name= "compressed-stone",
+	icon = "__resource-compression__/graphics/compressed-stone.png",
+	flags = { "goes-to-main-inventory" },
+	subgroup = "raw-material",
+	order = "[compressed-stone]",
+	stack_size = 100,
+  },
 
   {
     type = "item",

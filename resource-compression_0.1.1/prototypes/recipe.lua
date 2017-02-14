@@ -4,7 +4,7 @@ data:extend({
     type = "recipe",
     name = "compressed-iron",
 	category = "advanced-crafting",
-	energy_required = 25,
+	energy_required = 50,
 	enabled = true,
     ingredients = 
     {
@@ -17,7 +17,7 @@ data:extend({
     type = "recipe",
     name = "uncompress-iron",
 	category = "smelting",
-	energy_required = 25,
+	energy_required = 50,
 	enabled = true,
     ingredients = 
     {
@@ -32,7 +32,7 @@ data:extend({
     type = "recipe",
     name = "compressed-copper",
 	category = "advanced-crafting",
-	energy_required = 25,
+	energy_required = 50,
 	enabled = true,
     ingredients = 
     {
@@ -45,7 +45,7 @@ data:extend({
     type = "recipe",
     name = "uncompress-copper",
 	category = "smelting",
-	energy_required = 25,
+	energy_required = 50,
 	enabled = true,
     ingredients = 
     {
@@ -55,12 +55,54 @@ data:extend({
 	result_count = 25,
   },
   
+  -- Stone compression
+  {
+    type = "recipe",
+    name = "compressed-stone",
+	category = "advanced-crafting",
+	energy_required = 50,
+	enabled = true,
+    ingredients = 
+    {
+      {"stone", 30},
+    },
+    result = "compressed-stone"
+  },
+  
+  {
+    type = "recipe",
+    name = "uncompress-stone",
+	category = "advanced-crafting",
+	energy_required = 50,
+	enabled = true,
+    ingredients = 
+    {
+      {"compressed-stone", 1},
+    },
+    result = "stone",
+	result_count = 30,
+  },
+  
+  {
+    type = "recipe",
+    name = "compressed-stone-to-brick",
+	category = "smelting",
+	energy_required = 50,
+	enabled = true,
+    ingredients = 
+    {
+      {"compressed-stone", 1},
+    },
+    result = "stone-brick",
+	result_count = 15,
+  },
+  
   -- Coal compression
   {
     type = "recipe",
     name = "coke-coal",
 	category = "advanced-crafting",
-	energy_required = 7.5,
+	energy_required = 15,
 	enabled = true,
     ingredients = 
     {
